@@ -2,16 +2,15 @@ package main
 
 import (
   "fmt"
+  "strconv"
   "reflect"
 )
 
 func main()  {
-  var s string ="string"
-  var i int = 0
-  var f float32 = 1.2
-
+  var b bool = true
+  fmt.Println(reflect.TypeOf(b))
+  var s string = strconv.FormatBool(true)
   fmt.Println(reflect.TypeOf(s))
-  fmt.Println(reflect.TypeOf(i))
-  fmt.Println(reflect.TypeOf(f))
+  fmt.Println(s)
 
 }
