@@ -1,1 +1,1 @@
-# hello_go
+# Introductory projects from Go in 24 hours
