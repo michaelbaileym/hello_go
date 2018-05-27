@@ -33,14 +33,14 @@ func responseTime(url string) {
 func main() {
 
 	urls := make([]string, 3)
-	urls[0] = "https://www.usa.gov/"
+	urls[0] = "http://www.pm.gov.pg/"
 	urls[1] = "https://www.gov.uk/"
 	urls[2] = "http://www.gouvernement.fr/"
 
 	for _, u := range urls {
-		responseTime(u)
+		go responseTime(u)
 	}
-
+	time.Sleep(time.Second * 5)
 	/*go slowFunc()
 	fmt.Println("I am not shown until slowFunc() completes")
 	time.Sleep(time.Second * 3)
